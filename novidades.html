@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Email Comercial</title>
+    <style>
+      body {
+        color: #3c3c3c;
+      }
+      /* Estilos CSS inline */
+      .email-container {
+        font-family: "Nunito", Arial, sans-serif;
+        background-color: #e1e1e1;
+        padding: 20px;
+        border-radius: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .highlight {
+        background-color: #3c3c3c;
+        padding: 2px 4px;
+        font-weight: bold;
+        padding: 0.5rem;
+        border-radius: 10px;
+        color: #e1e1e1;
+      }
+      .company-name {
+        color: #3c3c3c;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      .signature {
+        color: #3c3c3c;
+        font-style: italic;
+        margin-top: 5px;
+      }
+      .paragraph {
+        color: #3c3c3c;
+      }
+      .paragraph--nome {
+        font-weight: bold;
+      }
+      .logo {
+        border-radius: 50%;
+        max-width: 100px;
+        margin: 0 auto;
+      }
+      .title {
+        color: #3c3c3c;
+      }
+      .lista {
+        list-style: none;
+        padding: 0;
+        display: block;
+        flex-wrap: wrap;
+      }
+
+      .lista > a {
+        width: calc(50% - 1rem);
+        margin: 0.25rem;
+        color: #3c3c3c;
+        text-decoration: none;
+        font-family: "Nunito";
+      }
+      .produtos {
+        width: calc(33% - .65rem);
+        height: 200px;
+        border-radius: 20px;
+        display: inline-block;
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+        margin-top: .5rem;
+      }
+      .produtos__foto {
+        background-image: url('https://cdn.discordapp.com/attachments/1109594939840532501/1145835031571472434/CADEIRA_INFANTIL_IMBUIA_-_3.png');
+        background-position: center;
+        background-size: cover;
+        min-height: 50%;
+      }
+      .produtos--div {
+        position: relative;
+        bottom: -6.5rem;
+      }
+      .produtos__titulo {
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin: 0;
+        white-space: nowrap;
+        overflow:hidden;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+      .produtos__preco {
+        margin: 0;
+        margin-left: 1rem;
+      }
+      .produtos__botao {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+        background-color: #3c3c3c;
+        border: none;
+        position: relative;
+        transform: translateY(25%);
+        border-radius: 10px;
+        color: #e1e1e1;
+        padding: .5rem 0;
+        font-family: "Nunito";
+        transition: 500ms;
+    }
+    .produtos__botao:hover {
+        cursor: pointer;
+        background-color: #e1e1e1;
+        color: #3c3c3c;
+
+    }
+    @media (max-width: 666px) {
+      .produtos {
+        width: calc(50% - .65rem);
+      }
+    }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="email-container">
+      <h2 class="title">🎉 Ofertas Imperdíveis! Economize Como Nunca Antes! 🎉</h2>
+      <ul class="lista">
+        <a href="">
+          <li class="produtos">
+            <div
+              class="produtos__foto"
+              alt=""
+            />
+            <div class="produtos--div">
+              <p class="produtos__titulo">Cadeira Infatil sdasdiijsd</p>
+              <p class="produtos__preco">R$ 150,99</p>
+              <button class="produtos__botao">Comprar</button>
+            </div>
+          </li>
+        </a>
+
+        <a href="">
+          <li class="produtos">
+            <div
+              class="produtos__foto"
+              alt=""
+            />
+            <div class="produtos--div">
+              <p class="produtos__titulo">Cadeira Infatil sdasdiijsd</p>
+              <p class="produtos__preco">R$ 150,99</p>
+              <button class="produtos__botao">Comprar</button>
+            </div>
+          </li>
+        </a>
+
+        <a href="">
+          <li class="produtos">
+            <div
+              class="produtos__foto"
+              alt=""
+            />
+            <div class="produtos--div">
+              <p class="produtos__titulo">Cadeira Infatil sdasdiijsd</p>
+              <p class="produtos__preco">R$ 150,99</p>
+              <button class="produtos__botao">Comprar</button>
+            </div>
+          </li>
+        </a>
+
+
+      </ul>
+      <p class="company-name">Att,</p>
+      <p class="company-name">
+        Equipe <span class="highlight">Lojas Vinki</span>
+      </p>
+      <p class="signature">"Uma Loja, Inúmeras Possibilidades."</p>
+      <a href="https://vinki.com.br" target="_blank"
+        ><img
+          class="logo"
+          src="https://cdn.discordapp.com/attachments/1067833193329344542/1145449883269083186/logo-escrita.png"
+          alt=""
+      /></a>
+    </div>
+  </body>
+</html>
